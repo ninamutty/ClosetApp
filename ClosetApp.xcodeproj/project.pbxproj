@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		941ADB9A1E711AA100183567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941ADB991E711AA100183567 /* AppDelegate.swift */; };
-		941ADB9C1E711AA100183567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941ADB9B1E711AA100183567 /* ViewController.swift */; };
+		941ADB9C1E711AA100183567 /* OutfitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941ADB9B1E711AA100183567 /* OutfitsViewController.swift */; };
 		941ADB9F1E711AA100183567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941ADB9D1E711AA100183567 /* Main.storyboard */; };
 		941ADBA11E711AA100183567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941ADBA01E711AA100183567 /* Assets.xcassets */; };
 		941ADBA41E711AA100183567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941ADBA21E711AA100183567 /* LaunchScreen.storyboard */; };
 		941ADBAF1E711AA200183567 /* ClosetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941ADBAE1E711AA200183567 /* ClosetAppTests.swift */; };
+		94D279CB1E7222910044C7F2 /* OutfitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D279CA1E7222910044C7F2 /* OutfitCell.swift */; };
+		94D279CD1E72247E0044C7F2 /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D279CC1E72247E0044C7F2 /* Outfit.swift */; };
+		94D279CF1E7224E20044C7F2 /* OutfitTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D279CE1E7224E20044C7F2 /* OutfitTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,7 @@
 /* Begin PBXFileReference section */
 		941ADB961E711AA100183567 /* ClosetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClosetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941ADB991E711AA100183567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		941ADB9B1E711AA100183567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		941ADB9B1E711AA100183567 /* OutfitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitsViewController.swift; sourceTree = "<group>"; };
 		941ADB9E1E711AA100183567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		941ADBA01E711AA100183567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		941ADBA31E711AA100183567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		941ADBAA1E711AA200183567 /* ClosetAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClosetAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		941ADBAE1E711AA200183567 /* ClosetAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetAppTests.swift; sourceTree = "<group>"; };
 		941ADBB01E711AA200183567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D279CA1E7222910044C7F2 /* OutfitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutfitCell.swift; sourceTree = "<group>"; };
+		94D279CC1E72247E0044C7F2 /* Outfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
+		94D279CE1E7224E20044C7F2 /* OutfitTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutfitTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				941ADB991E711AA100183567 /* AppDelegate.swift */,
-				941ADB9B1E711AA100183567 /* ViewController.swift */,
+				941ADB9B1E711AA100183567 /* OutfitsViewController.swift */,
 				941ADB9D1E711AA100183567 /* Main.storyboard */,
+				94D279CC1E72247E0044C7F2 /* Outfit.swift */,
+				94D279CE1E7224E20044C7F2 /* OutfitTableView.swift */,
+				94D279CA1E7222910044C7F2 /* OutfitCell.swift */,
 				941ADBA01E711AA100183567 /* Assets.xcassets */,
 				941ADBA21E711AA100183567 /* LaunchScreen.storyboard */,
 				941ADBA51E711AA200183567 /* Info.plist */,
@@ -201,8 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				941ADB9C1E711AA100183567 /* ViewController.swift in Sources */,
+				941ADB9C1E711AA100183567 /* OutfitsViewController.swift in Sources */,
 				941ADB9A1E711AA100183567 /* AppDelegate.swift in Sources */,
+				94D279CD1E72247E0044C7F2 /* Outfit.swift in Sources */,
+				94D279CB1E7222910044C7F2 /* OutfitCell.swift in Sources */,
+				94D279CF1E7224E20044C7F2 /* OutfitTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				941ADBB51E711AA200183567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		941ADBB61E711AA200183567 /* Build configuration list for PBXNativeTarget "ClosetAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				941ADBB81E711AA200183567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,11 +6,12 @@ class Outfit {
     var timesWorn: Int
     var lastWorn: String
     
-    init(title: String, mainImage: UIImage, timesWorn: Int, lastWorn: String) {
-        self.title = title
-        self.mainImage = mainImage
-        self.timesWorn = timesWorn
-        self.lastWorn = lastWorn
+    init() {
+//    init(title: String, mainImage: UIImage, timesWorn: Int, lastWorn: String) {
+        self.title = "Title"
+        self.mainImage = UIImage(named: "DefaultImage")!
+        self.timesWorn = 3
+        self.lastWorn = "4"
     }
     
 }
